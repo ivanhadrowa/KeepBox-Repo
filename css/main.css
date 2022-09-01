@@ -1,3 +1,11 @@
+/*email dirigido*/
+#opacidad0 {
+  opacity: 0;
+  width: 5px;
+  height: 2px;
+  margin: 0;
+  padding: 0; }
+
 /*REGLAS GENERALES*/
 html {
   box-sizing: border-box;
@@ -30,6 +38,9 @@ a {
 img {
   max-width: 100%; }
 
+.logo-hero {
+  max-width: 75%; }
+
 h2 {
   font-size: 4rem; }
 
@@ -49,7 +60,8 @@ header {
   display: flex;
   flex-direction: column;
   background-color: #101820;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-around; }
   .navbar a {
     margin: 5px auto;
     padding: 0.5rem 0;
@@ -113,7 +125,9 @@ h2.encontranos {
   margin-top: 5rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
-  font-size: 3rem; }
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 8px; }
 
 /*NOSOTROS*/
 .nosotros {
@@ -157,35 +171,50 @@ h2.encontranos {
     transition: .2s; }
 
 /*CONTACTO*/
+.formulario-contenedor {
+  height: 550px; }
+
 .formulario {
-  background-color: #16202b;
-  max-width: 100%;
+  background-color: #101820;
+  width: 100%;
   margin: -170px auto;
-  padding: 2rem;
   border-radius: 1rem;
-  -webkit-box-shadow: 0px 0px 71px 7px rgba(0, 0, 0, 0.21);
-  -moz-box-shadow: 0px 0px 71px 7px rgba(0, 0, 0, 0.21);
-  box-shadow: 0px 0px 71px 7px rgba(0, 0, 0, 0.21); }
-  .formulario fieldset {
-    border: none; }
+  padding: 2rem;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75); }
+
+.formulario fieldset {
+  border: none; }
+
+.formulario legend {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+@media (min-width: 768px) {
   .formulario legend {
-    color: white;
-    font-size: 2rem;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold; }
+    font-size: 2.5rem; }
+  .contenedor-campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto; } }
 
 .campo:nth-child(3),
 .campo:nth-child(4) {
-  grid-column: 1 / 3;
+  grid-column: 1/3; }
+
+.campo {
+  margin-bottom: 1rem;
   margin: 1rem; }
 
 .campo label {
-  color: #fafafa;
+  color: white;
   font-weight: bold;
-  border: none;
-  padding: 1.5rem;
-  border: 0.5rem; }
+  margin-bottom: 0.5rem;
+  display: block; }
 
 .input-text {
   width: 100%;
@@ -246,17 +275,21 @@ footer {
   display: inline-block;
   height: 34px;
   z-index: 999;
-  position: relative; }
-  .dropdown-item .menu {
-    display: none;
-    border-radius: 3px;
-    overflow: hidden;
-    background-color: #00a887;
-    max-width: 150px;
-    padding: 1rem 2 rem; }
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 5px auto; }
 
 .dropdown-item > a {
   text-decoration: none; }
+
+.dropdown-item .menu {
+  display: none;
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: #00a887;
+  max-width: 150px;
+  padding: 1rem 2rem; }
 
 .dropdown-item:hover .menu {
   display: block; }
@@ -267,9 +300,6 @@ footer {
   list-style: none;
   text-align: left; }
 
-.dropdown-item a {
-  margin-bottom: 5px; }
-
 a svg:hover {
   transform: rotate(180deg);
   transition: .5s; }
@@ -279,27 +309,6 @@ a svg:hover {
   width: 85%;
   display: flex;
   flex-direction: column; }
-
-@media (min-width: 1200px) {
-  .texto-nosotros-container {
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%; }
-  .texto-mision,
-  .texto-vision,
-  .texto-valores {
-    width: 500px;
-    margin: 0 20px;
-    text-align: center; }
-  .texto-mision p,
-  .texto-vision p,
-  .texto-valores p {
-    font-size: 2.3rem; }
-  .texto-mision h3,
-  .texto-vision h3,
-  .texto-valores h3 {
-    font-size: 3.4rem;
-    text-align: center; } }
 
 /*MENU HAMBURGUESA*/
 .bars__menu {
@@ -340,3 +349,231 @@ a svg:hover {
     transition: ease-in-out .3s; }
   .activemenu__desplegable {
     display: block; } }
+
+.contenedor-mapa {
+  width: 100%;
+  margin: 0 auto; }
+
+.mapa {
+  background: white;
+  width: 100%; }
+
+@media (max-width: 549px) {
+  .texto-servicios {
+    margin: 2rem 0; }
+  h2.titulo-servicios {
+    margin-bottom: 2rem; }
+  .nosotros h2 {
+    margin-bottom: 2rem; }
+  .texto-vision, .texto-mision, .texto-valores {
+    margin-bottom: 2rem; } }
+
+h2.nosotross {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem; }
+
+@media (max-width: 600px) {
+  h2.nosotross {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 30px; } }
+
+.formulario-contenedor {
+  height: 500px;
+  background: white; }
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.footer-img {
+  width: 30%;
+  padding: 5rem 0; }
+
+.footer-textos p, .footer-textos h4 {
+  color: white; }
+
+p.texto-footer {
+  background-color: #101820;
+  color: white;
+  text-align: center;
+  padding-bottom: 3rem; }
+
+@media (max-width: 650px) {
+  footer {
+    flex-direction: column; }
+  .footer-textos p {
+    font-size: 1.5rem; }
+  .footer-textos h4 {
+    color: white;
+    font-size: 1.6rem;
+    padding-bottom: 1rem; }
+  .footer-img {
+    padding: 0;
+    width: 140px;
+    padding-bottom: 2rem; } }
+
+header {
+  align-items: center; }
+
+.dark-mode {
+  transform: rotateY(180deg); }
+
+/*MEDIAS QUERIES*/
+@media (min-width: 550px) {
+  .logo-contenedores {
+    width: 400px;
+    margin: 0 auto; }
+  .a-header {
+    display: flex; }
+  .a-header img {
+    justify-content: center; } }
+
+@media (min-width: 601px) {
+  .navbar {
+    flex-direction: row; } }
+
+a.enlace-activo {
+  transform: scale(1.2);
+  color: #00c6a0; }
+
+@media (min-width: 550px) {
+  .hero {
+    height: 89.5vh; }
+  .parrafo-hero {
+    font-size: 2.3rem; } }
+
+@media (min-width: 550px) {
+  .contenedor-servicios {
+    display: flex;
+    flex-direction: row; }
+  .texto-servicios {
+    width: 50%;
+    text-align: initial; }
+  .btn-servicios {
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-end; } }
+
+@media (min-width: 250px) {
+  .img-denis {
+    max-width: 350px; }
+  .denis {
+    margin-top: 5rem; }
+  h4.nombre-denis {
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 2rem 0 0 1rem;
+    text-align: center; }
+  .nosotros h2 {
+    font-size: 4rem; }
+  .btn-nosotros {
+    display: flex;
+    justify-content: flex-end; }
+  .btn-nosotros a {
+    padding: 1rem;
+    background-color: #00a887;
+    border-radius: 1rem;
+    margin-top: 1rem; } }
+
+@media (min-width: 550px) {
+  .foto-pag-servicios {
+    width: 400px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    -webkit-box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.75); } }
+
+@media (max-width: 700px) {
+  .foto-pag-servicios {
+    width: 330px; } }
+
+@media (min-width: 550px) {
+  .contenedor-servicios {
+    margin-bottom: 5rem; } }
+
+@media (min-width: 1200px) {
+  .texto-nosotros-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%; }
+  .texto-mision,
+  .texto-vision,
+  .texto-valores {
+    width: 500px;
+    margin: 0 20px;
+    text-align: center; }
+  .texto-mision p,
+  .texto-vision p,
+  .texto-valores p {
+    font-size: 2.3rem; }
+  .texto-mision h3,
+  .texto-vision h3,
+  .texto-valores h3 {
+    font-size: 3.4rem;
+    text-align: center; } }
+
+@media (min-width: 550px) {
+  .texto-servicios p {
+    width: 90%;
+    justify-content: center;
+    margin-left: 5px; }
+  .texto-servicios h3 {
+    width: 90%;
+    justify-content: center;
+    margin-left: 5px; } }
+
+@media (max-width: 600px) {
+  header {
+    justify-content: space-between;
+    align-items: center; }
+  .bars__menu {
+    display: block;
+    margin-right: 22px; }
+  img.logo-contenedores {
+    width: 250px; }
+  .menu__desplegable {
+    display: none;
+    transition: ease-in-out .3s; }
+  .activemenu__desplegable {
+    display: block; } }
+
+@media (max-width: 549px) {
+  .texto-servicios {
+    margin: 2rem 0; }
+  h2.titulo-servicios {
+    margin-bottom: 2rem; }
+  .nosotros h2 {
+    margin-bottom: 2rem; }
+  .texto-vision, .texto-mision, .texto-valores {
+    margin-bottom: 2rem; } }
+
+@media (max-width: 600px) {
+  h2.nosotross {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 30px; } }
+
+@media (max-width: 650px) {
+  footer {
+    flex-direction: column; }
+  .footer-textos p {
+    font-size: 1.5rem; }
+  .footer-textos h4 {
+    color: white;
+    font-size: 1.6rem;
+    padding-bottom: 1rem; }
+  .footer-img {
+    padding: 0;
+    width: 140px;
+    padding-bottom: 2rem; } }
+
+@media (min-width: 765px) {
+  .formulario {
+    width: 65rem;
+    height: 95%; } }
