@@ -1,0 +1,14 @@
+
+
+@media (min-width: 601px){
+    #modo{display: none;
+}
+}
+
+
+
+#modo svg{
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+
