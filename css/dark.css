@@ -79,3 +79,7 @@ color: rgb(221, 221, 221);
 .lunita{
     width: 13px;
 }
+
+.dark .redes{
+    background-color: #101820;
+}

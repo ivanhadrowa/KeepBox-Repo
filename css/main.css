@@ -405,8 +405,7 @@ h2.titulo-nosotros {
     font-size: 30px; } }
 
 .formulario-contenedor {
-  height: 500px;
-  background: white; }
+  height: 500px; }
 
 footer {
   display: flex;
@@ -614,3 +613,17 @@ a.enlace-activo {
 
 .footer-textos p {
   color: #fafafa; }
+
+.redes {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0; }
+  .redes svg {
+    cursor: pointer;
+    transition: .3s; }
+    .redes svg:hover {
+      transform: scale(1.1); }
+
+.dark .redes svg {
+  filter: invert(0.8); }

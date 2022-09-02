@@ -497,7 +497,6 @@ a svg:hover{
   
   .formulario-contenedor{
     height: 500px;
-    background: white;
   }
   
   
@@ -758,4 +757,23 @@ a svg:hover{
 
 .footer-textos p{
   color: $blanco;
+}
+
+.redes{
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+  svg{
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+      transform: scale(1.1)
+
+    }
+  }
+}
+
+.dark .redes svg{
+  filter: invert(0.8);
 }
