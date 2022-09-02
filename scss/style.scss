@@ -349,9 +349,9 @@ footer{
     height: 34px;
     z-index: 999;
     position: relative;
-    display: flex;
-    align-items: center;
     margin: 5px auto;
+    padding: 0.5rem;
+    
 }
 
 .dropdown-item > a{
@@ -379,6 +379,15 @@ footer{
     text-align: left;
 }
 
+.dropdown-item a{
+  margin-bottom: 5px;
+}
+
+.navbar .dropdown-item:hover{
+  color: $secundarioClaro;
+  transform: scale(1.1);
+  transition: .5s;
+}
 
 
 a svg:hover{
