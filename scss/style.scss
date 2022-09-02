@@ -118,7 +118,7 @@ header{
     flex-direction: column;
     justify-content: center;
     background-color: #eff5f5;
-    padding-top: 5rem;
+
     .titulo-servicios{
     display: flex;
     justify-content: center;
@@ -141,7 +141,13 @@ header{
 }
 
 .imagen-servicios{
-    width: 20%;
+    width: 25%;
+
+}
+
+.dark .imagen-servicios{
+  width: 25%;
+  filter: invert(0.7);
 }
 
 .texto-servicios{
@@ -741,3 +747,7 @@ a svg:hover{
       margin: 2rem 0;
     }
   }
+
+#modo.modo{
+  padding: 2rem 0;
+}
