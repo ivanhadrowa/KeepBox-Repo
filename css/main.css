@@ -38,9 +38,6 @@ a {
 img {
   max-width: 100%; }
 
-.logo-hero {
-  max-width: 75%; }
-
 h2 {
   font-size: 4rem; }
 
@@ -82,18 +79,27 @@ header {
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
+
+.logo-hero {
+  width: 75%; }
 
 .servicios {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #eff5f5; }
+  background-color: #eff5f5;
+  padding-top: 5rem; }
   .servicios .titulo-servicios {
     display: flex;
     justify-content: center; }
     .servicios .titulo-servicios h2 {
       font-size: 3rem; }
+
+@media (min-width: 600px) {
+  .titulo-servicios {
+    padding-bottom: 2rem; } }
 
 .contenedor-servicios {
   display: flex;
@@ -121,26 +127,21 @@ header {
       background-color: #00c6a0;
       transition: .2s; }
 
-h2.encontranos {
-  margin-top: 5rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  font-size: 3rem;
-  text-align: center;
-  padding-top: 8px; }
+.foto-pag-servicios {
+  margin-bottom: 2rem; }
 
 /*NOSOTROS*/
 .nosotros {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 0;
   flex-direction: column;
   align-items: center; }
-  .nosotros h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 3rem; }
+
+h2.titulo-nosotros {
+  font-size: 3rem;
+  text-transform: uppercase; }
 
 .denis {
   align-items: center;
@@ -358,6 +359,21 @@ a svg:hover {
   background: white;
   width: 100%; }
 
+h2.encontranos {
+  margin-top: 5rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 3rem;
+  background-color: #eff5f5; }
+
+.mapa {
+  background-color: #eff5f5;
+  background: #eff5f5; }
+
+.contenedor-mapa {
+  background-color: #eff5f5; }
+
 @media (max-width: 549px) {
   .texto-servicios {
     margin: 2rem 0; }
@@ -368,13 +384,12 @@ a svg:hover {
   .texto-vision, .texto-mision, .texto-valores {
     margin-bottom: 2rem; } }
 
-h2.nosotross {
+h2.titulo-nosotros {
   text-align: center;
-  margin-top: 5rem;
-  margin-bottom: 3rem; }
+  margin-top: 5rem; }
 
 @media (max-width: 600px) {
-  h2.nosotross {
+  h2.titulo-nosotros {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -462,14 +477,12 @@ a.enlace-activo {
   .img-denis {
     max-width: 350px; }
   .denis {
-    margin-top: 5rem; }
+    margin-top: 2rem; }
   h4.nombre-denis {
     font-size: 3rem;
     text-transform: uppercase;
-    padding: 2rem 0 0 1rem;
+    padding: 1rem 0;
     text-align: center; }
-  .nosotros h2 {
-    font-size: 4rem; }
   .btn-nosotros {
     display: flex;
     justify-content: flex-end; }
@@ -577,3 +590,9 @@ a.enlace-activo {
   .formulario {
     width: 65rem;
     height: 95%; } }
+
+@media (min-width: 601px) {
+  .nosotross {
+    font-size: 4rem;
+    text-align: center;
+    margin: 2rem 0; } }
