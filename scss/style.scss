@@ -2,6 +2,7 @@
 @import "header";
 @import "footer";
 @import "productos";
+@import "map";
 
 $fuentePrincipal: 'Nunito', sans-serif;
 
@@ -118,7 +119,9 @@ h2{
 
 .texto-servicios{
     width: 90%;
-    text-align: center;
+    
+    text-align: map-get($estilos, centro );
+    color: map-get($estilos, color )
 }
 
 .btn-servicios{
@@ -126,7 +129,7 @@ h2{
     display: flex;
     justify-content: center;
     a{
-        background-color: $secundario;
+        background-color: map-get($colores, secundario);
         padding: 1rem;
         border-radius: 1rem;
         &:hover{

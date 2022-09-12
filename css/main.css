@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap");
 header {
   display: flex;
   justify-content: center;
@@ -116,16 +117,23 @@ footer {
   padding: 5rem;
   text-align: center;
   width: 100%;
-  background-color: #101820; }
-
-footer {
+  background-color: #101820;
   display: flex;
   justify-content: space-around;
   align-items: center; }
 
 .footer-img {
-  width: 30%;
-  padding: 5rem 0; }
+  padding: 5rem 3rem; }
+
+h1 {
+  font-size: 60px;
+  color: #ffffff;
+  font-family: 'Roboto Slab', serif;
+  width: 100%; }
+
+@media (min-width: 830px) {
+  h1 {
+    font-size: 75px; } }
 
 .footer-textos p, .footer-textos h4 {
   color: white; }
@@ -147,22 +155,15 @@ p.texto-footer {
     padding-bottom: 1rem; }
   .footer-img {
     padding: 0;
-    width: 140px;
-    padding-bottom: 2rem; } }
-
-@media (max-width: 650px) {
-  footer {
-    flex-direction: column; }
-  .footer-textos p {
-    font-size: 1.5rem; }
-  .footer-textos h4 {
-    color: white;
-    font-size: 1.6rem;
-    padding-bottom: 1rem; }
-  .footer-img {
-    padding: 0;
-    width: 140px;
-    padding-bottom: 2rem; } }
+    width: 100%;
+    padding-bottom: 2rem;
+    font-size: 30px;
+    justify-content: center;
+    display: flex; }
+  h1 {
+    font-size: 50px;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif; } }
 
 .footer-textos p {
   color: #fafafa; }
@@ -272,7 +273,8 @@ h2 {
 
 .texto-servicios {
   width: 90%;
-  text-align: center; }
+  text-align: center;
+  color: #000; }
 
 .btn-servicios {
   padding: 2rem;
