@@ -184,10 +184,13 @@ h2.titulo-nosotros{
     justify-content: flex-end;
 }
 
-.btn-nosotros a{
+.btn{
     padding: 1rem;
     background-color: $secundario;
     border-radius: 1rem;
+    color: black;
+    cursor: pointer;
+    transition: .2s;
     &:hover{
         background-color: $secundarioClaro;
         transition: .2s;
@@ -264,12 +267,13 @@ h2.titulo-nosotros{
     justify-content: flex-end;
 }
 
-.boton2{
-    padding: 1rem;
-    background-color: #2e3f4b;
+.btn--enviar{
+    @extend.btn;
+    background-color: #1b2530;
+    color: white;
     &:hover{
         transform: scale(1.1);
-        transition: .3s;
+        background-color: rgb(96, 125, 146);
     }
 }
 

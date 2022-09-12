@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/name-smile');
 
 footer{
     padding: 5rem;
@@ -20,6 +21,8 @@ footer{
     color: #ffffff;
     font-family: 'Roboto Slab', serif;
     width: 100%;
+    font-family: 'Name Smile', sans-serif;
+      letter-spacing: 5px;
   }
 
   @media(min-width:830px){
@@ -62,10 +65,20 @@ footer{
     h1{
       font-size: 50px;
       color: #ffffff;
-      font-family: 'Roboto Slab', serif;
+      font-family: 'Name Smile', sans-serif;
+      letter-spacing: 5px;
     }
   }
 
+  @media (max-width:350px){
+    h1{
+      font-size: 30px;
+      color: #ffffff;
+      font-family: 'Name Smile', sans-serif;
+      letter-spacing: 5px;
+    }
+ 
+  }
 
   .footer-textos p{
     color: $blanco;

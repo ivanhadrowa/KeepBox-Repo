@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap");
+@import url("http://fonts.cdnfonts.com/css/name-smile");
 header {
   display: flex;
   justify-content: center;
@@ -129,7 +130,9 @@ h1 {
   font-size: 60px;
   color: #ffffff;
   font-family: 'Roboto Slab', serif;
-  width: 100%; }
+  width: 100%;
+  font-family: 'Name Smile', sans-serif;
+  letter-spacing: 5px; }
 
 @media (min-width: 830px) {
   h1 {
@@ -162,7 +165,15 @@ p.texto-footer {
   h1 {
     font-size: 50px;
     color: #ffffff;
-    font-family: 'Roboto Slab', serif; } }
+    font-family: 'Name Smile', sans-serif;
+    letter-spacing: 5px; } }
+
+@media (max-width: 350px) {
+  h1 {
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'Name Smile', sans-serif;
+    letter-spacing: 5px; } }
 
 .footer-textos p {
   color: #fafafa; }
@@ -323,11 +334,14 @@ h2.titulo-nosotros {
   display: flex;
   justify-content: flex-end; }
 
-.btn-nosotros a {
+.btn, .btn--enviar {
   padding: 1rem;
   background-color: #00a887;
-  border-radius: 1rem; }
-  .btn-nosotros a:hover {
+  border-radius: 1rem;
+  color: black;
+  cursor: pointer;
+  transition: .2s; }
+  .btn:hover, .btn--enviar:hover {
     background-color: #00c6a0;
     transition: .2s; }
 
@@ -387,12 +401,12 @@ h2.titulo-nosotros {
   display: flex;
   justify-content: flex-end; }
 
-.boton2 {
-  padding: 1rem;
-  background-color: #2e3f4b; }
-  .boton2:hover {
+.btn--enviar {
+  background-color: #1b2530;
+  color: white; }
+  .btn--enviar:hover {
     transform: scale(1.1);
-    transition: .3s; }
+    background-color: #607d92; }
 
 .mapa iframe {
   height: 55vh;
