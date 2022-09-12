@@ -1,0 +1,19 @@
+Notas para encontrar las consignas:
+
+mixin: style.scss (linea 223-231);
+map-get: lineas 123-124-132;
+extend: linea 276;
+pude agregar los imports que te debia de la anterior consigna!
+
+agregue atributos meta
+baje la calidad de las imagenes
+
+
+Tuve un problema al agregar el h1 ya que no sabia donde ponerlo por estetica, y 
+no queria agregar el nombre de la marca mas veces, asi que lo agregue en el footer, 
+cambie la imagen por el texto, y que la fuente sea la misma.
+
+
+
+
+
