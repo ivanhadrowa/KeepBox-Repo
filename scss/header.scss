@@ -1,0 +1,134 @@
+header{
+    display: flex;
+    justify-content: center;
+    background-color: $blanco;
+    width: 100%;
+    padding: 1rem;
+
+    .a-header{display: flex;}
+
+    .logo-contenedores{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    background-color: $oscuro;
+    align-items: center;
+    justify-content: space-around;
+    a{
+        margin: 5px auto;
+        padding: 0.5rem 0;
+        color: $blanco;
+        transition: .5s;
+         &:hover{
+            color: $secundarioClaro;
+            transform: scale(1.1);}
+    }
+}
+
+/*NAVBAR MENU*/
+
+.dropdown-item{
+    display: inline-block;
+    height: 34px;
+    z-index: 999;
+    position: relative;
+    margin: 5px auto;
+    padding: 0.5rem;
+
+}
+
+.dropdown-item > a{
+    text-decoration: none;
+}
+
+.dropdown-item .menu{
+    display: none;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #00a887;
+    max-width: 150px;
+    padding: 1rem 2rem;
+    } 
+
+
+.dropdown-item:hover .menu{
+    display: block;
+}
+
+.dropdown-item .menu ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.dropdown-item a{
+  margin-bottom: 5px;
+}
+
+.navbar .dropdown-item:hover{
+  color: $secundarioClaro;
+  transform: scale(1.1);
+  transition: .5s;
+}
+
+
+a svg:hover{
+    transform: rotate(180deg);
+    transition: .5s;
+}
+
+.texto-nosotros-container{
+    margin: 0 auto;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*MENU HAMBURGUESA*/
+
+.bars__menu{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+    span{
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: $oscuro;
+        margin-top: 6px;
+        transition: all 300ms;
+        transform-origin: 0px 100%;
+    }
+  }
+   
+  .activeline1__bars-menu{
+    transform: rotate(45deg) translate(-2px, 1px)
+  }
+  
+  .activeline3__bars-menu{
+    transform: rotate(-45deg) translate(-4px, 2px)
+  }
+  
+  .activeline2__bars-menu{
+    opacity: 0;
+    margin-left: -30px;
+  }
+  
+   @media (max-width : 600px){
+    header{justify-content: space-between; align-items: center;}
+    .bars__menu{display: block; margin: 0 20px;}
+    img.logo-contenedores{width: 250px;}
+    .menu__desplegable{
+      display: none;
+      transition: ease-in-out .3s;}
+    .activemenu__desplegable{
+     display: block;
+    }
+  }
