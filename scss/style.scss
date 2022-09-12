@@ -219,11 +219,16 @@ h2.titulo-nosotros{
   .formulario fieldset{
     border: none;
   }
+
+  @mixin formularios($color,$fsize,$talign) {
+    color: $color;
+    font-size: $fsize;
+    text-align: $talign;
+}
+
   
   .formulario legend{
-    color: white;
-    font-size: 2rem;
-    text-align: center;
+    @include formularios(white,2rem, center);
     text-transform: uppercase;
     font-weight: bold;
   }
