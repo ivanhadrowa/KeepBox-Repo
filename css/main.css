@@ -146,7 +146,8 @@ p.texto-footer {
   background-color: #101820;
   color: white;
   text-align: center;
-  padding-bottom: 3rem; }
+  padding-bottom: 3rem; 
+margin: 0;}
 
 @media (max-width: 650px) {
   footer {

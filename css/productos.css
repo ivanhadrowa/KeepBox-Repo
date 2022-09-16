@@ -130,7 +130,9 @@ header {
     width: 100% !important;
     display: flex !important;
     justify-content: space-around !important;
-    align-items: center !important; }
+    align-items: center !important; 
+    margin-top: 2rem !important;
+  }
  
 
     h1 {
@@ -213,7 +215,7 @@ header {
                   display: block !important; } }
 
             .carousel-item img{
-              max-height: 745px;
+              max-height: 86vh;
             }
 
             h2{
@@ -239,4 +241,17 @@ header {
               }
             }
 
+            .btn:hover{
+              background-color: #00c6a0 !important;
+              transition: .2s !important;
+            }
+
+            .col-md-4 img{
+              width: 300px;
             
+            }
+            .col-md-4{
+              align-items: center;
+              justify-content: center;
+              display: flex;
+            }
