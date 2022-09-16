@@ -415,6 +415,7 @@ h2.titulo-nosotros {
   h2{
     font-size: 30px;
     text-align: center;
+    margin: 2rem 0;
   }
 
 /*LOADER*/
