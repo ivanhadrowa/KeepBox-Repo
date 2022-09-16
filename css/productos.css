@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap");
+
 header {
     display: flex !important;
     justify-content: center !important;
@@ -10,6 +12,16 @@ header {
       max-width: 80% !important;
       margin: 0 auto !important; 
     }
+
+    body{
+      font-family: "Nunito", sans-serif;
+      line-height: 1.5;
+  font-size: 1.6rem;
+    }
+
+    a.enlace-activo {
+      transform: scale(1.2);
+      color: #00c6a0; }
   
   .navbar {
     display: flex !important;
@@ -105,8 +117,7 @@ header {
     .bars__menu {
       display: block !important;
       margin: 0 20px !important; }
-    img.logo-contenedores {
-      width: 250px !important; }
+
     .menu__desplegable {
       display: none !important;
       transition: ease-in-out .3s !important; }
@@ -117,14 +128,10 @@ header {
     padding: 5rem !important;
     text-align: center !important;
     width: 100% !important;
-    background-color: #101820 !important;
     display: flex !important;
     justify-content: space-around !important;
     align-items: center !important; }
-  
-  .footer-img {
-    padding: 5rem 3rem !important; }
-  
+ 
 
     h1 {
         font-size: 60px !important;
@@ -142,7 +149,6 @@ header {
         color: white !important; }
       
       p.texto-footer {
-        background-color: #101820 !important;
         color: white !important;
         text-align: center !important;
         padding-bottom: 3rem !important; }
@@ -156,12 +162,7 @@ header {
           color: white !important;
           font-size: 1.6rem !important;
           padding-bottom: 1rem !important; }
-        .footer-img {
-          padding: 0 !important;
-          padding-bottom: 2rem !important;
-          font-size: 30px !important;
-          justify-content: center !important;
-          display: flex !important; }
+
         h1 {
           font-size: 50px !important;
           color: #ffffff !important;
@@ -178,36 +179,6 @@ header {
       .footer-textos p {
         color: #fafafa !important; }
 
-        html {
-            box-sizing: border-box !important;
-            font-size: 62.5% !important;
-            overflow-x: hidden !important; }
-          
-          *, *:before, *:after {
-            box-sizing: border-box !important;
-            margin: 0 !important;
-            padding: 0 !important; }
-          
-          body {
-            background-color: #fafafa !important;
-            line-height: 1.5 !important;
-            font-size: 1.6rem !important;
-            font-family: "Nunito", sans-serif !important;
-            width: 100% !important;
-            overflow-x: hidden !important; }
-            body::-webkit-scrollbar {
-              display: none !important; }
-          
-          p {
-            font-size: 1.8rem;
-            color: #000000 !important; }
-          
-          a {
-            text-decoration: none;
-            color: #000000 !important; }
-          
-          img {
-            max-width: 100% !important; }
 
 
             @media (min-width: 550px) {
@@ -216,8 +187,7 @@ header {
                 margin: 0 auto !important; }
               .a-header {
                 display: flex !important; }
-              .a-header img {
-                justify-content: center !important; } }
+             
             
             @media (min-width: 601px) {
               .navbar {
@@ -242,13 +212,30 @@ header {
                 .activemenu__desplegable {
                   display: block !important; } }
 
+            .carousel-item img{
+              max-height: 745px;
+            }
 
-                  .menu__desplegable{
-                    display: flex;
-                    width: 100%;
-                    align-items: center;
-                  }
+            h2{
+              text-align: center !important;
+              margin: 2rem 0 !important;
+              font-size: 3rem !important;
+              font-family: "Nunito", sans-serif !important;
+            }
 
-                  .navbar{
-                    width: 100%;
-                  }
+            @media (min-width:601px){
+              h2{
+                font-size: 4rem !important;
+              }
+            }
+
+            @media (max-width:550px){
+              h2.titulos-servicios{
+                text-align: center !important;
+              margin: 2rem 0 !important;
+              font-size: 3rem !important;
+              font-family: "Nunito", sans-serif !important;
+              }
+            }
+
+            

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/productos.css">
     <link rel="shortcut icon" href="../img/KeepBox - Isotipo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/dark.css">
     
 </head>
 <body>
@@ -29,24 +30,9 @@
     </header>
 <nav class="menu__desplegable">
     <div class="navbar">
-        <a href="../index.html">INICIO</a></li>
+        <a href="../index.html">INICIO</a>
         <a href="servicios.html">SERVICIOS</a>
-        <div class="dropdown-item">
-            <a href="#">PRODUCTOS <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-              </svg></a>
-            
-                <div class="menu">
-                    <ul>
-                        <li><a href="./pages/productos.html">Oficina</a></li>
-                        <li><a href="./pages/productos.html">Vivienda</a></li>
-                        <li><a href="./pages/productos.html">Garita de Seguridad</a></li>
-                        <li><a href="./pages/productos.html">Showroom</a></li>
-                        <li><a href="./pages/productos.html">pañol</a></li>
-                        <li><a href="./pages/productos.html">Cocina Comedor</a></li>
-                    </ul>
-                </div>
-            </div>
+        <a class="enlace-activo" href="#">PRODUCTOS</a>
         <a href="nosotros.html">NOSOTROS</a>
         <a href="contacto.html">CONTACTO</a>
     </div>
@@ -62,13 +48,51 @@
             <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
           </svg>
     </div>
-    <div>
-        <img src="../img/productos/container afuera.png" alt="">
-        <img src="../img/productos/hombre de afuera oscuro adentro.png" alt="">
-        <img src="../img/productos/hombre de afuera sol.png" alt="">
-        <img src="../img/productos/hombre sentado atardecer.png" alt="">
 
-    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/productos/hombre de afuera oscuro adentro.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/productos/hombre de afuera sol.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/productos/hombre sentado atardecer.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <h2 class="titulos-servicios">NUESTROS PRODUCTOS</h2>
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/productos/hombre sentado atardecer.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
 </main>
 
 
