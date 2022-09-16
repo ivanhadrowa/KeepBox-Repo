@@ -240,6 +240,7 @@ header {
               font-family: "Nunito", sans-serif !important;
               }
             }
+          }
 
             .btn:hover{
               background-color: #00c6a0 !important;
@@ -255,3 +256,5 @@ header {
               justify-content: center;
               display: flex;
             }
+
+       
