@@ -670,16 +670,16 @@ a.enlace-activo {
   }
   
   .producto{
-    max-width: 300px  I !important;
-    text-align: center  I !important;
-    margin: 0 auto  I !important;
-    padding: 10px I !important;
-    padding-bottom: 20px I !important;
-    border-radius: 5px I !important;
-    margin-bottom: 2rem I !important;
-    -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.41) I !important;
-  -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.41) I !important;
-  box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.41) I !important;
+    max-width: 300px   !important;
+    text-align: center   !important;
+    margin: 0 auto   !important;
+    padding: 10px  !important;
+    padding-bottom: 20px  !important;
+    border-radius: 5px  !important;
+    margin-bottom: 2rem  !important;
+    -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.41)  !important;
+  -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.41)  !important;
+  box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.41) !important;
   margin-bottom: 70px I !important;
   background-color: transparent  !important;
   }
