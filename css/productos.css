@@ -1,260 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap");
 
-header {
-    display: flex !important;
-    justify-content: center !important;
-    background-color: #fafafa !important;
-    width: 100% !important;
-    padding: 1rem !important; }
-    header .a-header {
-      display: flex !important; }
-    header .logo-contenedores {
-      max-width: 80% !important;
-      margin: 0 auto !important; 
-    }
-
-    body{
-      font-family: "Nunito", sans-serif;
-      line-height: 1.5;
-  font-size: 1.6rem;
-    }
-
-    a.enlace-activo {
-      transform: scale(1.2);
-      color: #00c6a0; }
-  
-  .navbar {
-    display: flex !important;
-    flex-direction: column !important;
-    background-color: #101820 !important;
-    align-items: center !important;
-    justify-content: space-around !important; }
-    .navbar a {
-      margin: 5px auto !important;
-      padding: 0.5rem 0 !important;
-      color: #fafafa !important;
-      transition: .5s !important; }
-      .navbar a:hover {
-        color: #00c6a0 !important;
-        transform: scale(1.1) !important; }
-
-        /*NAVBAR MENU*/
-.dropdown-item {
-    display: inline-block !important;
-    height: 34px !important;
-    z-index: 999 !important;
-    position: relative !important;
-    margin: 5px auto !important;
-    padding: 0.5rem !important; }
-  
-  .dropdown-item > a {
-    text-decoration: none !important; }
-  
-  .dropdown-item .menu {
-    display: none !important;
-    border-radius: 3px !important;
-    overflow: hidden !important;
-    background-color: #00a887 !important;
-    max-width: 150px !important;
-    padding: 1rem 2rem !important; }
-  
-  .dropdown-item:hover .menu {
-    display: block !important; }
-  
-  .dropdown-item .menu ul {
-    padding: 0 !important;
-    margin: 0 !important;
-    list-style: none !important;
-    text-align: left !important; }
-  
-  .dropdown-item a {
-    margin-bottom: 5px !important; }
-  
-  .navbar .dropdown-item:hover {
-    color: #00c6a0 !important;
-    transform: scale(1.1) !important;
-    transition: .5s !important; }
-  
-  a svg:hover {
-    transform: rotate(180deg) !important;
-    transition: .5s !important; }
-  
-  .texto-nosotros-container {
-    margin: 0 auto !important;
-    width: 85% !important;
-    display: flex !important;
-    flex-direction: column !important; }
-  
-  /*MENU HAMBURGUESA*/
-  .bars__menu {
-    width: 30px !important;
-    height: 30px !important;
-    cursor: pointer !important;
-    display: none !important; }
-    .bars__menu span {
-      display: block !important;
-      width: 100% !important;
-      height: 2px !important;
-      background: #101820 !important;
-      margin-top: 6px !important;
-      transition: all 300ms !important;
-      transform-origin: 0px 100% !important; }
-  
-  .activeline1__bars-menu {
-    transform: rotate(45deg) translate(-2px, 1px) !important; }
-  
-  .activeline3__bars-menu {
-    transform: rotate(-45deg) translate(-4px, 2px) !important; }
-  
-  .activeline2__bars-menu {
-    opacity: 0 !important;
-    margin-left: -30px !important; }
-  
-  @media (max-width: 600px) {
-    header {
-      justify-content: space-between !important;
-      align-items: center !important; }
-    .bars__menu {
-      display: block !important;
-      margin: 0 20px !important; }
-
-    .menu__desplegable {
-      display: none !important;
-      transition: ease-in-out .3s !important; }
-    .activemenu__desplegable {
-      display: block !important; } }
-  
-  footer {
-    padding: 5rem !important;
-    text-align: center !important;
-    width: 100% !important;
-    display: flex !important;
-    justify-content: space-around !important;
-    align-items: center !important; 
-    margin-top: 2rem !important;
-  }
- 
-
-    h1 {
-        font-size: 60px !important;
-        color: #ffffff !important;
-        font-family: 'Roboto Slab', serif !important;
-        width: 100% !important;
-        font-family: 'Name Smile', sans-serif !important;
-        letter-spacing: 5px !important; }
-      
-      @media (min-width: 830px) {
-        h1 {
-          font-size: 75px !important; } }
-      
-      .footer-textos p, .footer-textos h4 {
-        color: white !important; }
-      
-      p.texto-footer {
-        color: white !important;
-        text-align: center !important;
-        padding-bottom: 3rem !important; }
-      
-      @media (max-width: 650px) {
-        footer {
-          flex-direction: column !important; }
-        .footer-textos p {
-          font-size: 1.5rem !important; }
-        .footer-textos h4 {
-          color: white !important;
-          font-size: 1.6rem !important;
-          padding-bottom: 1rem !important; }
-
-        h1 {
-          font-size: 50px !important;
-          color: #ffffff !important;
-          font-family: 'Name Smile', sans-serif !important;
-          letter-spacing: 5px !important; } }
-      
-      @media (max-width: 350px) {
-        h1 {
-          font-size: 30px !important;
-          color: #ffffff !important;
-          font-family: 'Name Smile', sans-serif !important;
-          letter-spacing: 5px !important; } }
-      
-      .footer-textos p {
-        color: #fafafa !important; }
-
-
-
-            @media (min-width: 550px) {
-              .logo-contenedores {
-                width: 400px !important;
-                margin: 0 auto !important; }
-              .a-header {
-                display: flex !important; }
-             
-            
-            @media (min-width: 601px) {
-              .navbar {
-                flex-direction: row !important; } }
-            
-            a.enlace-activo {
-              transform: scale(1.2) !important;
-              color: #00c6a0 !important; }
-
-              @media (max-width: 600px) {
-                header {
-                  justify-content: space-between !important;
-                  align-items: center !important; }
-                .bars__menu {
-                  display: block !important;
-                  margin-right: 22px !important; }
-                img.logo-contenedores {
-                  width: 250px !important; }
-                .menu__desplegable {
-                  display: none !important;
-                  transition: ease-in-out .3s !important; }
-                .activemenu__desplegable {
-                  display: block !important; } }
-
-            .carousel-item img{
-              max-height: 86vh;
-            }
-
-            h2{
-              text-align: center !important;
-              margin: 2rem 0 !important;
-              font-size: 3rem !important;
-              font-family: "Nunito", sans-serif !important;
-
-            }
-
-            @media (min-width:601px){
-              h2{
-                font-size: 4rem !important;
-              }
-            }
-
-            @media (max-width:550px){
-              h2.titulos-servicios{
-                text-align: center !important;
-              margin: 2rem 0 !important;
-              font-size: 3rem !important;
-              font-family: "Nunito", sans-serif !important;
-              }
-            }
-          }
-
-            .btn:hover{
-              background-color: #00c6a0 !important;
-              transition: .2s !important;
-            }
-
-            .col-md-4 img{
-              width: 300px;
-            
-            }
-            .col-md-4{
-              align-items: center;
-              justify-content: center;
-              display: flex;
-            }
 
        
+.contenedor-productos{
+  
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+}
+
+@media (min-width:700px){
+  .contenedor-productos{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width:960px){
+  .contenedor-productos{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.producto{
+  max-width: 300px ;
+  text-align: center ;
+  margin: 0 auto ;
+  padding: 10px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.41);
+-moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.41);
+box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.41);
+margin-bottom: 70px;
+background-color: transparent
+}
+
+.producto:hover{
+  transform: scale(1.04);
+  transition: .2s;
+}
+.producto h3{
+  font-size: 20px;
+  margin: 5px 0;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.producto img{
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  margin-bottom: 10px;;
+}
+
+.producto a{
+  padding: 0.6rem;
+  background-color: #00a887;
+  border-radius: 5px;
+  text-transform: uppercase;
+  
+}
+
+.producto a:hover{
+  background-color: #00c6a0;
+  transition: .2s;
+}
