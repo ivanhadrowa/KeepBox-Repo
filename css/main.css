@@ -650,6 +650,12 @@ a.enlace-activo {
 .titulo-servicios {
   margin-top: 2rem; }
 
+@media(min-width:1050px){
+  .nuestros-productos{
+    margin-bottom: 4rem;
+  }
+}
+
   .contenedor-productos{
   
     display: grid;
@@ -669,48 +675,198 @@ a.enlace-activo {
     }
   }
   
+
+
+
+
+
+
+
+
+
+  /*PRODUCTOS*/
+
   .producto{
-    max-width: 300px   !important;
-    text-align: center   !important;
-    margin: 0 auto   !important;
-    padding: 10px  !important;
-    padding-bottom: 20px  !important;
-    border-radius: 5px  !important;
-    margin-bottom: 2rem  !important;
-    -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.41)  !important;
-  -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.41)  !important;
-  box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.41) !important;
-  margin-bottom: 70px I !important;
-  background-color: transparent  !important;
+    display: grid;
+    width: 280px;
+    margin: 0 auto;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
   }
   
-  .producto:hover{
-    transform: scale(1.04) !important;
-    transition: .2s !important;
+  .product-img{
+    width: 100%;
   }
-  .producto h3{
-    font-size: 20px !important;
-    margin: 5px 0 !important;
-    align-items: center !important;
-    text-transform: uppercase !important;
+
+  
+.producto-imagen{
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.derecha h3, .derecha p{
+  margin: 10px ;
+  margin-left: 15px;
+}
+.derecha h3{
+  text-transform: uppercase;
+}
+
+.btn-presupuesto{
+  padding: 1rem;
+  background-color: #00a887;
+  
+  color: black;
+  cursor: pointer;
+  transition: .2s; 
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+  .btn:hover, .btn--enviar:hover {
+    background-color: #00c6a0;
+    transition: .2s; 
+  }
+
+  a.btn-presupuesto{
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .presupuesto{
+    width: 100%;
+   
+  background-color: #00a887;
+  margin: 0 auto;
+  color: black;
+  cursor: pointer;
+  transition: .2s; 
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  }
+
+  a.btn-presupuesto:hover{
+    background-color: #00c6a0;
+  }
+
+  .presupuesto:hover{
+    background-color: #00c6a0;
+  }
+
+  @media(min-width:375px){
+    .producto{
+      width: 380px;
+    }
+  }
+
+  @media(min-width:420px){
+    .producto{
+      width: 400px;
+    }
+  }
+
+  @media(min-width:590px){
+    .producto{
+      width: 500px;
+      display: flex ;
+    }
+    .producto-imagen{
+      border-top-right-radius: 0px;
+      height: 100%;
+      border-bottom-left-radius: 10px;
+    }
+    .product-img{
+      width: 550px;
+   }
+  .presupuesto{
+    border-bottom-left-radius: 0px;
   }
   
-  .producto img{
-    width: 300px !important;
-    height: 300px !important;
-    border-radius: 5px !important;
-    margin-bottom: 10px !important;
   }
-  
-  .producto a{
-    padding: 0.6rem !important;
-    background-color: #00a887 !important;
-    border-radius: 5px !important;
-    text-transform: uppercase !important;
+
+
+
+
+  @media(min-width:700px){
+    .producto{
+      width: 650px;
+      display: flex ;
+    }
+    .producto-imagen{
+      border-top-right-radius: 0px;
+      height: 100%;
+      border-bottom-left-radius: 10px;
+    }
+    .product-img{
+      width: 550px;
+   }
+  .presupuesto{
+    border-bottom-left-radius: 0px;
     
   }
   
-  .producto a:hover{
-    background-color: #00c6a0 !important;
-    transition: .2s !important;
   }
+
+
+
+
+
+  
+  @media(min-width:1050px){
+    .producto{
+      width: 500px;
+      display: flex ;
+    }
+
+    .productos-container{
+      display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+    }
+  }
+
+  @media(min-width:1200px){
+    .producto{
+      width: 600px;
+      display: flex ;
+    }
+}
+
+@media(min-width:1400px){
+  .producto{
+    width: 650px;
+    display: flex ;
+  }
+}
+
+@media(min-width:1650px){
+  .producto{
+    width: 750px;
+    display: flex ;
+  }
+}
+
+@media(min-width:1650px){
+  .derecha p{
+    margin-bottom: 20px;
+  }
+}
+
+
+/*CORRECCIONES DENIS*/
+
+@media(min-width:1200px){
+h3 svg{
+  width: 30px;
+  height: 30px;
+}
+}
