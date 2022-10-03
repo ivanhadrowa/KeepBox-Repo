@@ -275,7 +275,8 @@ img {
   margin: 0; }
 
 .imagen-servicios {
-  width: 25%; }
+  width: 25%;
+max-width: 300px; }
 
 .dark .imagen-servicios {
   width: 25%;
