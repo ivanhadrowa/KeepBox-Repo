@@ -7,6 +7,7 @@
     overflow: hidden;
     width: 70px;
     height: 70px;
+    z-index: 999;
 }
 
 .wpp-logo img{
