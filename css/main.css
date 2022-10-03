@@ -868,3 +868,8 @@ grid-row-gap: 0px;
 
 /*CORRECCIONES DENIS*/
 
+@media(min-width:1200px){
+  h3 svg{
+      width: 25px;
+      height: 25px;
+}
