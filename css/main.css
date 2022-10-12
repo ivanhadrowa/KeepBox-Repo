@@ -37,6 +37,13 @@ header {
   margin: 5px auto;
   padding: 0.5rem; }
 
+  svg.bi-caret-down-fill{
+    position: absolute;
+    top: 8px;
+    width: 10px;
+    margin-left: 2px;
+  }
+
 .dropdown-item > a {
   text-decoration: none; }
 
@@ -345,6 +352,10 @@ h2.titulo-nosotros {
   .btn:hover, .btn--enviar:hover {
     background-color: #00c6a0;
     transition: .2s; }
+    .btn--enviar {
+      text-transform: uppercase;
+      font-size: 13px;
+    }
 
 /*CONTACTO*/
 .formulario-contenedor {
@@ -513,7 +524,7 @@ header {
     flex-direction: row; } }
 
 a.enlace-activo {
-  transform: scale(1.2);
+ 
   color: #00c6a0; }
 
 @media (min-width: 550px) {
@@ -865,11 +876,21 @@ grid-row-gap: 0px;
   }
 }
 
-
 /*CORRECCIONES DENIS*/
+.campo textarea{
+  resize: none;
+  width: 100%
+}
+@media(max-width:768px){
+  .campo textarea{
+    width: 100%
+  }
+
+}
 
 @media(min-width:1200px){
   h3 svg{
       width: 25px;
       height: 25px;
 }
+
