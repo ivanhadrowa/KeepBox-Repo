@@ -44,6 +44,7 @@ header {
     margin-left: 2px;
   }
 
+ 
 .dropdown-item > a {
   text-decoration: none; }
 
@@ -52,6 +53,7 @@ header {
   border-radius: 3px;
   overflow: hidden;
   background-color: #00a887;
+  position: absolute;
   
   padding: 1rem 2rem; }
 
@@ -71,10 +73,13 @@ header {
 .dropdown-item a {
   margin-bottom: 5px; }
 
+  
+
+
 .navbar .dropdown-item:hover {
-  color: #00c6a0;
-  transform: scale(1.1);
-  transition: .5s; }
+  color: #00c6a0; 
+  transition: .5s;
+transform: scale(1.1); }
 
 
 
