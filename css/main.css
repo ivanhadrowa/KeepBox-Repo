@@ -52,8 +52,12 @@ header {
   border-radius: 3px;
   overflow: hidden;
   background-color: #00a887;
-  max-width: 150px;
+  
   padding: 1rem 2rem; }
+
+  .menu{
+    max-width: 110px;
+  }
 
 .dropdown-item:hover .menu {
   display: block; }
@@ -636,7 +640,8 @@ a.enlace-activo {
   .texto-servicios {
     margin: 2rem 0; }
   h2.titulo-servicios {
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+  margin-top: 0; }
   .nosotros h2 {
     margin-bottom: 2rem; }
   .texto-vision, .texto-mision, .texto-valores {
@@ -647,7 +652,8 @@ a.enlace-activo {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    font-size: 30px; } }
+    font-size: 30px; }
+    }
 
 @media (min-width: 765px) {
   .formulario {
@@ -658,7 +664,10 @@ a.enlace-activo {
   .nosotross {
     font-size: 4rem;
     text-align: center;
-    margin: 2rem 0; } }
+    margin: 2rem 0; } 
+    .servicios .titulo-servicios h2 {
+      font-size: 4rem;
+  }}
 
 #modo.modo {
   padding: 2rem 0; }
@@ -805,6 +814,7 @@ a.enlace-activo {
   }
   
   }
+
 
 
 
