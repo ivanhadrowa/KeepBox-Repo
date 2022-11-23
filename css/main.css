@@ -738,6 +738,7 @@ a.enlace-activo {
   border-top-right-radius: 10px;
 }
 
+
 .derecha h3, .derecha p{
   margin: 10px ;
   margin-left: 15px;
@@ -814,6 +815,9 @@ a.enlace-activo {
     .product-img{
       width: 550px;
    }
+   .producto-imagen{
+    width: 150px
+  }
   .presupuesto{
     border-bottom-left-radius: 0px;
   }
@@ -892,6 +896,9 @@ grid-row-gap: 0px;
 }
 
 /*CORRECCIONES DENIS*/
+
+
+
 .campo textarea{
   resize: none;
   width: 100%
@@ -908,4 +915,4 @@ grid-row-gap: 0px;
       width: 25px;
       height: 25px;
 }
-
+}
