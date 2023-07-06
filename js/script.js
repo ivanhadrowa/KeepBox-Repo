@@ -37,3 +37,54 @@ if (valor=="true"){
     body.classList.remove("dark")
 }
 
+
+
+
+//SLIDEEER
+
+function enableSliders() {
+    const products = document.querySelectorAll('.product');
+
+    products.forEach(product => {
+      const slider = product.querySelector('.slider');
+      const prevBtn = product.querySelector('.prev-btn');
+      const nextBtn = product.querySelector('.next-btn');
+      const images = slider.querySelectorAll('img');
+      let currentIndex = 0;
+
+      // Muestra la imagen actual y actualiza el índice
+      function showImage(index) {
+        images.forEach(image => {
+          image.classList.remove('active');
+        });
+        images[index].classList.add('active');
+        currentIndex = index;
+      }
+
+      // Evento para mostrar la siguiente imagen
+      nextBtn.addEventListener('click', () => {
+        currentIndex++;
+        if (currentIndex >= images.length) {
+          currentIndex = 0;
+        }
+        showImage(currentIndex);
+      });
+
+      // Evento para mostrar la imagen anterior
+      prevBtn.addEventListener('click', () => {
+        currentIndex--;
+        if (currentIndex < 0) {
+          currentIndex = images.length - 1;
+        }
+        showImage(currentIndex);
+      });
+
+      // Mostrar la primera imagen inicialmente
+      showImage(currentIndex);
+    });
+  }
+
+  // Llamar a la función para habilitar los sliders al cargar la página
+  window.addEventListener('load', enableSliders);
+  
+
